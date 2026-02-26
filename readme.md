@@ -31,8 +31,7 @@
 
 
 
-
-              1. **Protocol Hierarchy was used to understand the structure of the traffic**
+**1.Protocol Hierarchy was used to understand the structure of the traffic**
 
 ![Protocol Hierarchy](images/protocol-hierarchy.png)
 
@@ -40,7 +39,7 @@
 
 **\*TLS is used to encrypt to files.**
 
-                    **2. Conservations was used to detect for high volume host (10.1.9.101)**
+**2. Conservations was used to detect for high volume host (10.1.9.101)**
 
 ![Conservations](images/conservations.png)
 
@@ -79,14 +78,16 @@
 **"IPs are clean, domains are malicious. This indicates an IP rotation strategy: So the attacker is changing IPs, not the domain. "**
 
 
-
-                          **3. ENDPOINTS was used to see the data of traffic between IPs**
+**3. ENDPOINTS was used to see the data of traffic between IPs**
 
 ![EndPoints](images/endpoints.png)
 
 **4 mb data was sent by 51.159.84.185 '1zil1.s3.cubbit.eu' to 10.1.9.101**
+
 **3 MB data was downloaded 172.253.63.95 'firebasestorage.googleapis.com' to 10.1.9.101**
+
 **4. Time to check traffic of '172.253.63.95' in wireshark**
+
 **When we start checking packets from first packet, we can see a handshake on (HTTPS)443 and 49895 between 172.253.63.95 and 10.0.9.101 at 18:04:43 2026-01-09.**
 
 **![First Handshake on 3. packet between with 172.253.63.95 and 10.1.9.101 ](images/handshake1.png)**
@@ -98,6 +99,7 @@
 **Note : This filter shows all HTTPS traffic to the victim (10.1.9.101) from Firebase (172.253.63.95).**
 
 **We already know from the Endpoints table that 3 MB of data was sent to 10.1.9.101 from this IP. Now, let's see when and how fast it happened.**
+
 **![I/O Graphs ](images/spike1.png)**
 
 **The graph shows a massive spike of 1500+ packets/second at the moment of infection.**
@@ -120,10 +122,12 @@
 
 **![Last packet of 172.253.63.95 ](images/last1.png)**
 
-* **You might wonder about packet 5069! Let me explain; There is a 3-second gap between packet 2038 and packet 5069.**
-* **5069  18:04:47  RST, ACK  Connection closed ( well, it means that connection was forcefully closed with RST packet). we have to check another packets to understand this event.**
+**You might wonder about packet 5069! Let me explain; There is a 3-second gap between packet 2038 and packet 5069.**
+
+**5069  18:04:47  RST, ACK  Connection closed ( well, it means that connection was forcefully closed with RST packet). we have to check another packets to understand this event.**
 
 **5. Time to check traffic of '51.159.84.185' in wireshark**
+
 **At packet 2039, we see that 51.159.84.185 '1zil1.s3.cubbit.eu' wants connect to Host(10.1.9.101)**
 
 
@@ -135,7 +139,7 @@
 
 **Let me explain with I/O Graphs ;**
 
-* **First Download Detail (ip.src == 172.253.63.95)**
+**First Download Detail (ip.src == 172.253.63.95)**
 
 **[First Download](images/spike1.png)**
 
@@ -147,13 +151,9 @@
 
 **4 MB download from cubbit.eu, peak speed ~100 packets/second.**
 
-
 **Overall Traffic to Victim (ip.dst == 10.1.9.101)**
 
-
-
 **[Overall Traffic](images/iographs-host.png)**
-
 
 **Two large file downloads within 4.3 seconds.**
 **Second Download finished at 5067 packet and at 5069 connection of 172.253.63.95 and 51.159.84.185 was forcefully closed with RST packet at 18:04:49.**
@@ -168,7 +168,7 @@
 
 **[I/O Graphs](images/132-226-8-169.png)**
 
-* **If we check File-->Export Object --> HTTP( Cause we can see bytes of data and timeline)**
+**If we check File-->Export Object --> HTTP( Cause we can see bytes of data and timeline)**
 
 **[Export Object](images/132-226-8-169-bytes.png)**
 
