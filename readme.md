@@ -39,16 +39,16 @@
 
 **\*TLS is used to encrypt to files.**
 
-**2. Conservations was used to detect for high volume host (10.1.9.101)**
+**2. Conversations was used to detect for high volume host (10.1.9.101)**
 
-![Conservations](images/conservations.png)
+![Conversations](images/conservations.png)
 
-**\*in checking conservations the goal is for seeing which ip has higher packets between each other**
+**\*in checking Conversations the goal is for seeing which ip has higher packets between each other**
 
 
 **\*But if there is high volume of TLS, we have to check name resolution;**
 
-![Conservations](images/conservations-name-resoulation.png)
+![Conversations](images/conservations-name-resoulation.png)
 
 **Well ,there may be malicious link(IP'S) ! Let's check :)**
 1. **51.159.84.185(this ip is clear looking like clear)  - 1zil1.s3.cubbit.eu  4 MB**
@@ -73,7 +73,7 @@
 
 ![VirusTotal](images/172.253.63.95-link.png)
 
-**Result of thats link is 2/93 security vendors flagged this domain as malicious**
+**Result of that's link is 2/93 security vendors flagged this domain as malicious**
 
 **"IPs are clean, domains are malicious. This indicates an IP rotation strategy: So the attacker is changing IPs, not the domain. "**
 
@@ -190,14 +190,14 @@
 
 
 **Well, Each packet contains the same response: the victim's public IP (173.66.46.97).This confirms that the malware periodically checks the victim's public IP – a classic beaconing technique. \*\*It's enumeration.(classic beaconing technique)\*\***
-**If we countinue to checking another packets, we can see; 104.21.67.152 reallyfreegeiop.org (C2?) ip connected to host(10.1.9.101) 443(HTTPS) and 49898 ports at 18:04:50. 1 Second after 132.226.8.169 checkip.dyndns.org (beaconing) connection.**
+**If we continue to checking another packets, we can see; 104.21.67.152 reallyfreegeiop.org (C2?) ip connected to host(10.1.9.101) 443(HTTPS) and 49898 ports at 18:04:50. 1 Second after 132.226.8.169 checkip.dyndns.org (beaconing) connection.**
 
 **[I/O Graphs of 132.226.8.169 and 104.21.67.152](images/2ipio.png)**
 
 
 **In this Graphic we can see that Both show low but regular traffic – typical of beaconing and C2 communication.** 
 
-**conecting time of 104.21.67.152 is between 18:05:48 and 18:05:53 latest connection(at 5162 packet). It's 5 seconds!**
+**connecting time of 104.21.67.152 is between 18:05:48 and 18:05:53 latest connection(at 5162 packet). It's 5 seconds!**
 
 **At 18:04:53, the reallyfreegeoip.org connection stops, and the Telegram connection starts. This could indicate a C2 switch or redundant communication.\*\***
 
