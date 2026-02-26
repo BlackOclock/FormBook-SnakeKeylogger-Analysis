@@ -131,7 +131,7 @@
 **At packet 2039, we see that 51.159.84.185 '1zil1.s3.cubbit.eu' wants connect to Host(10.1.9.101)**
 
 
-**[Connection of 51.159.84.185](images/handshake2.png)**
+**[Connection of 51.159.84.185](images/handshake.png)**
 
 
 
@@ -144,7 +144,7 @@
 **First Download Detail (ip.src == 172.253.63.95)**
 
 
-**[First Download](images/spike1.png)**
+**[First Download](images/spike.png)**
 
 
 
