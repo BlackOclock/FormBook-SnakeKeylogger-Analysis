@@ -76,7 +76,7 @@
 
 
 
-![VirusTotal](images/172-253-63-95-link.png)
+![VirusTotal](images/172.253.63.95-link.png)
 
 **Result of thats link is 2/93 security vendors flagged this domain as malicious**
 
@@ -88,49 +88,20 @@
 
 ![EndPoints](images/endpoints.png)
 
-
-
-
-
-* **4 mb data was sent by 51.159.84.185 '1zil1.s3.cubbit.eu' to 10.1.9.101**
-* **3 MB data was downloaded 172.253.63.95 'firebasestorage.googleapis.com' to 10.1.9.101**
-
-
-
-
-
-
-
+**4 mb data was sent by 51.159.84.185 '1zil1.s3.cubbit.eu' to 10.1.9.101**
+**3 MB data was downloaded 172.253.63.95 'firebasestorage.googleapis.com' to 10.1.9.101**
 **4. Time to check traffic of '172.253.63.95' in wireshark**
-
-
-
-* **When we start checking packets from first packet, we can see a handshake on (HTTPS)443 and 49895 between 172.253.63.95 and 10.0.9.101 at 18:04:43 2026-01-09.**
-
-
-
-
+**When we start checking packets from first packet, we can see a handshake on (HTTPS)443 and 49895 between 172.253.63.95 and 10.0.9.101 at 18:04:43 2026-01-09.**
 
 **![First Handshake on 3. packet between with 172.253.63.95 and 10.1.9.101 ](images/handshake1.png)**
 
-
-
-
-
-
-
-* **well we can write on filter ip.src==172.253.63.95 and ip.dst == 10.1.9.101 \&\& tcp.port == 443**
+**well we can write on filter ip.src==172.253.63.95 and ip.dst == 10.1.9.101 \&\& tcp.port == 443**
 
 
 
 **Note : This filter shows all HTTPS traffic to the victim (10.1.9.101) from Firebase (172.253.63.95).**
 
 **We already know from the Endpoints table that 3 MB of data was sent to 10.1.9.101 from this IP. Now, let's see when and how fast it happened.**
-
-
-
-
-
 **![I/O Graphs ](images/spike1.png)**
 
 **The graph shows a massive spike of 1500+ packets/second at the moment of infection.**
@@ -158,15 +129,12 @@
 * **5069  18:04:47  RST, ACK  Connection closed ( well, it means that connection was forcefully closed with RST packet). we have to check another packets to understand this event.**
 
 **5. Time to check traffic of '51.159.84.185' in wireshark**
-
-* **At packet 2039, we see that 51.159.84.185 '1zil1.s3.cubbit.eu' wants connect to Host(10.1.9.101)**
+**At packet 2039, we see that 51.159.84.185 '1zil1.s3.cubbit.eu' wants connect to Host(10.1.9.101)**
 
 
 **[Connection of 51.159.84.185](images/handshake2.png)**
 
-
-
-* **In the view, we see a handshake on 49896 and 443 (HTTPS) ports between host and 51.159.84.185**
+**In the view, we see a handshake on 49896 and 443 (HTTPS) ports between host and 51.159.84.185**
 
 * **When I use the filter 'ip.src== 51.159.84.185 and ip.dst == 10.1.9.101 and tcp.port == 443', I see that the second file (4 MB, confirmed by Endpoints) started downloading at 18:04:46. The first download finished at 18:04:44, and just 2 seconds later, at 18:04:46, the second download began. And second download finished at packet 5067 at 18:04:47. that's only 1 second!**
 
