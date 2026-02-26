@@ -120,8 +120,7 @@
 
 **This is the exact moment the first-stage malware was downloaded.**
 
-
-* **If we use the filter ip.addr == 172.253.63.95, we can see last packet of this IP.(Time is the most important factor for us to analyze the infection timeline.). The last packet from this IP is 2038 at 18:04:44**
+**If we use the filter ip.addr == 172.253.63.95, we can see last packet of this IP.(Time is the most important factor for us to analyze the infection timeline.). The last packet from this IP is 2038 at 18:04:44**
 
 **![Last packet of 172.253.63.95 ](images/last1.png)**
 
@@ -136,9 +135,9 @@
 
 **In the view, we see a handshake on 49896 and 443 (HTTPS) ports between host and 51.159.84.185**
 
-* **When I use the filter 'ip.src== 51.159.84.185 and ip.dst == 10.1.9.101 and tcp.port == 443', I see that the second file (4 MB, confirmed by Endpoints) started downloading at 18:04:46. The first download finished at 18:04:44, and just 2 seconds later, at 18:04:46, the second download began. And second download finished at packet 5067 at 18:04:47. that's only 1 second!**
+**When I use the filter 'ip.src== 51.159.84.185 and ip.dst == 10.1.9.101 and tcp.port == 443', I see that the second file (4 MB, confirmed by Endpoints) started downloading at 18:04:46. The first download finished at 18:04:44, and just 2 seconds later, at 18:04:46, the second download began. And second download finished at packet 5067 at 18:04:47. that's only 1 second!**
 
-* **Let me explain with I/O Graphs ;**
+**Let me explain with I/O Graphs ;**
 
 * **First Download Detail (ip.src == 172.253.63.95)**
 
@@ -192,7 +191,7 @@
 **At 18:04:53, the reallyfreegeoip.org connection stops, and the Telegram connection starts. This could indicate a C2 switch or redundant communication.\*\***
 
 
-**![Telegram Handshake](images/149-154-166-110.png)**
+**![Telegram Handshake](images/149.154.166.110.png)**
 
 **TLS handshake with api.telegram.org at 18:04:53 (ports 443 and 49899).**
 
