@@ -302,7 +302,7 @@
 
 
 
-**![VirusTotal](images/virustotal-53.png)**
+**![VirusTotal](images/virustotal.png)**
 
 
 
