@@ -63,7 +63,7 @@
 
 **But if we will search 51.159.84.185 as link (1zil1.s3.cubbit.eu) in virustotal**
 
-![VirusTotal](images/51-159-84-185-link.png)
+![VirusTotal](images/51-159-84-181-link.png)
 
 
 **We are seeing that link is 7/93 security vendors flagged this domain as malicious**
