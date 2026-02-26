@@ -59,11 +59,7 @@
 5. **132.226.8.169 - checkip.dyndns.com ( 1/93 security vendor flagged this IP address as malicious )**
 6. **149.154.166.110 - api.telegram.org (1/93 security vendor flagged this IP address as malicious)**
 
-**There is result of VirusTotal. But we can't be sure %100 results of VirusTotal. By that we have to analysis in Traffic now. First step; to check (51.159.84.185, 172.253.63.95) on whatismyipaddress.com. Our goal is to find the cloud provider behind these IPs.**
-
-![Conservations](images/51-159-84-185.png)
-
-![Conservations](images/172-253-63-95.png)
+**There is result of VirusTotal. But we can't be sure %100 results of VirusTotal. By that we have to analysis in Traffic now. First step; to check (51.159.84.185, 172.253.63.95) on whatismyipaddress.com. Our goal is to find the cloud provider behind these IPs. And we couldnt find anything also in there.**
 
 **But if we will search 51.159.84.185 as link (1zil1.s3.cubbit.eu) in virustotal**
 
