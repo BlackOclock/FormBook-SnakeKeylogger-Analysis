@@ -162,9 +162,6 @@
 **132.226.8.169 ip connected to host(10.1.9.101) poty 80(HTTP) at 18:04:49. If we write the filter ' ip.src ==132.226.8.169 and ip.dst == 10.1.9.101 and tcp.port == 80' and if we check inside of packets. and inspecting the packet contents, we see: '<html><head><title>Current IP Check</title></head><body>Current IP Address: 173.66.46.97</body></html>\\r\\n'.This reveals that the malware queried the victim's public IP address. The response shows the victim's real IP: 173.66.46.97.**
 
 
-
-
-
 **[I/O Graphs](images/132-226-8-169.png)**
 
 **Low but regular traffic to checkip.dyndns.org – beaconing behavior.**
