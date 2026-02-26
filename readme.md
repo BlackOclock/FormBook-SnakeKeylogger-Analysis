@@ -31,7 +31,7 @@
 
 
 
-**1.Protocol Hierarchy was used to understand the structure of the traffic**
+**1.PROTOCOL HIERARCHY was used to understand the structure of the traffic**
 
 ![Protocol Hierarchy](images/protocol-hierarchy.png)
 
