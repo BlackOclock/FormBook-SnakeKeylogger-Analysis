@@ -38,7 +38,7 @@
 
 
 
-**!\[Protocol Hierarchy](images/protocol-hierarchy.png)**
+![Protocol Hierarchy](images/protocol-hierarchy.png)
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-**!\[Conservations] (images/conservations.png)**
+![Conservations](images/conservations.png)
 
 
 
@@ -82,7 +82,7 @@
 
 
 
-**!\[Conservations] (images/conservations-name-resoulation.png)**
+![Conservations](images/conservations-name-resoulation.png)
 
 
 
@@ -107,11 +107,11 @@
 
 
 
-**!\[Conservations] (images/51-159-84-185.png)**
+![Conservations](images/51-159-84-185.png)
 
 
 
-**!\[Conservations] (images/172-253-63-95.png)**
+![Conservations](images/172-253-63-95.png)
 
 
 
@@ -121,7 +121,7 @@
 
 
 
-**!\[VirusTotal] (images/51-159-84-185-link.png)**
+![VirusTotal](images/51-159-84-185-link.png)
 
 
 
@@ -137,7 +137,7 @@
 
 
 
-**!\[VirusTotal] (images/172-253-63-95-link.png)**
+![VirusTotal](images/172-253-63-95-link.png)
 
 
 
@@ -161,7 +161,7 @@
 
 
 
-**!\[EndPoints] (images/endpoints.png)**
+![EndPoints](images/endpoints.png)
 
 
 
@@ -186,7 +186,7 @@
 
 
 
-**!\[First Handshake on 3. packet between with 172.253.63.95 and 10.1.9.101 ] (images/handshake1.png)**
+**![First Handshake on 3. packet between with 172.253.63.95 and 10.1.9.101 ](images/handshake1.png)**
 
 
 
@@ -206,7 +206,7 @@
 
 
 
-**!\[I/O Graphs ] (images/spike1.png)**
+**![I/O Graphs ](images/spike1.png)**
 
 
 
@@ -240,7 +240,7 @@
 
 
 
-**!\[Last packet of 172.253.63.95 ] (images/last1.png)**
+**![Last packet of 172.253.63.95 ](images/last1.png)**
 
 
 
@@ -265,7 +265,7 @@
 
 
 
-**\[Connection of 51.159.84.185](images/handshake2.png)**
+**[Connection of 51.159.84.185](images/handshake2.png)**
 
 
 
@@ -291,7 +291,7 @@
 
 
 
-**\[First Download](images/spike1.png)**
+**[First Download](images/spike1.png)**
 
 
 
@@ -309,7 +309,7 @@
 
 
 
-**\[Second Download](images/spike2.png)**
+**[Second Download](images/spike2.png)**
 
 
 
@@ -327,7 +327,7 @@
 
 
 
-**\[Overall Traffic](images/iographs-host.png)**
+**[Overall Traffic](images/iographs-host.png)**
 
 
 
@@ -341,7 +341,7 @@
 
 
 
-**\[ Forcefully closed](images/RST.png)**
+**[Forcefully closed](images/RST.png)**
 
 
 
@@ -355,7 +355,7 @@
 
 
 
-**\[I/O Graphs](images/132-226-8-169.png)**
+**[I/O Graphs](images/132-226-8-169.png)**
 
 
 
@@ -367,7 +367,7 @@
 
 
 
-**\[I/O Graphs](images/132-226-8-169.png)**
+**[I/O Graphs](images/132-226-8-169.png)**
 
 
 
@@ -377,7 +377,7 @@
 
 
 
-**\[Export Object](images/132-226-8-169-bytes.png)**
+**[Export Object](images/132-226-8-169-bytes.png)**
 
 
 
@@ -391,7 +391,7 @@
 
 
 
-**\[I/O Graphs of 132.226.8.169 and 104.21.67.152](images/2ipio.png)**
+**[I/O Graphs of 132.226.8.169 and 104.21.67.152](images/2ipio.png)**
 
 
 
@@ -425,7 +425,7 @@
 
 
 
-**!\[Telegram Handshake](images/149-154-166-110.png)**
+**![Telegram Handshake](images/149-154-166-110.png)**
 
 **TLS handshake with api.telegram.org at 18:04:53 (ports 443 and 49899).**
 
@@ -433,7 +433,7 @@
 
 
 
-**!\[104.21.67.152 and 149.154.166.110 Graphs](images/104-and-149.png)**
+**![104.21.67.152 and 149.154.166.110 Graphs](images/104-and-149.png)**
 
 **Top: 104.21.67.152 stops sending data at 18:04:53. Bottom: 149.154.166.110 starts at the same time.**
 
@@ -443,7 +443,7 @@
 
 
 
-**!\[162.254.34.31 `eraqron.shop` ](images/162-1.png)**
+**![162.254.34.31 `eraqron.shop` ](images/162-1.png)**
 
 * **After the 6-second gap,  (162.254.34.31) connected on port 587 (SMTP).**
 
@@ -451,7 +451,7 @@
 
 
 
-**!\[TCP Stream `eraqron.shop` ](images/162-tcpstream.png)**
+**![TCP Stream `eraqron.shop` ](images/162-tcpstream.png)**
 
 
 
@@ -467,7 +467,7 @@
 
 
 
-**!\[CyberChef decode ](images/decode.png)**
+**![CyberChef decode ](images/decode.png)**
 
 
 
@@ -497,7 +497,7 @@
 
 
 
-**!\[IMF Objects](images/eml.png)**
+**![IMF Objects](images/eml.png)**
 
 
 
@@ -521,7 +521,7 @@
 
 
 
-**!\[I/O Graphs](images/eml-graphic.png)**
+**![I/O Graphs](images/eml-graphic.png)**
 
 
 
@@ -553,7 +553,7 @@
 
 
 
-**!\[Base64 decode in eml](images/malware-eml.png)**
+**![Base64 decode in eml](images/malware-eml.png)**
 
 
 
@@ -605,7 +605,7 @@
 
 
 
-**\[What is Stub version 4.4](images/stub4.4.png)**
+**[What is Stub version 4.4](images/stub4.4.png)**
 
 
 
@@ -665,7 +665,7 @@
 
 
 
-**!\[VirusTotal](images/virustotal-53.png)**
+**![VirusTotal](images/virustotal-53.png)**
 
 
 
