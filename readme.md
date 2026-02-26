@@ -16,7 +16,7 @@
 
 
 
-**!\[Malware-Traffic-Analysis.net Source Files](images/mta-source-files.png)**
+![Malware-Traffic-Analysis.net Source Files](images/mta-source-files.png)
 
 
 
