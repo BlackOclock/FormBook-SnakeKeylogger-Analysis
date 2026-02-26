@@ -133,6 +133,8 @@
 
 **[Connection of 51.159.84.185](images/handshake2.png)**
 
+
+
 **In the view, we see a handshake on 49896 and 443 (HTTPS) ports between host and 51.159.84.185**
 
 **When I use the filter 'ip.src== 51.159.84.185 and ip.dst == 10.1.9.101 and tcp.port == 443', I see that the second file (4 MB, confirmed by Endpoints) started downloading at 18:04:46. The first download finished at 18:04:44, and just 2 seconds later, at 18:04:46, the second download began. And second download finished at packet 5067 at 18:04:47. that's only 1 second!**
@@ -141,41 +143,57 @@
 
 **First Download Detail (ip.src == 172.253.63.95)**
 
+
 **[First Download](images/spike1.png)**
+
+
 
 **3 MB download from firebasestorage.googleapis.com, peak speed 200 packets/second.**
 
 **Second Download Detail (ip.src == 51.159.84.185)**
 
+
 **[Second Download](images/spike2.png)**
+
+
 
 **4 MB download from cubbit.eu, peak speed ~100 packets/second.**
 
 **Overall Traffic to Victim (ip.dst == 10.1.9.101)**
 
+
 **[Overall Traffic](images/iographs-host.png)**
+
+
 
 **Two large file downloads within 4.3 seconds.**
 **Second Download finished at 5067 packet and at 5069 connection of 172.253.63.95 and 51.159.84.185 was forcefully closed with RST packet at 18:04:49.**
 
+
 **[Forcefully closed](images/RST.png)**
+
+
 **132.226.8.169 ip connected to host(10.1.9.101) poty 80(HTTP) at 18:04:49. If we write the filter ' ip.src ==132.226.8.169 and ip.dst == 10.1.9.101 and tcp.port == 80' and if we check inside of packets. and inspecting the packet contents, we see: '<html><head><title>Current IP Check</title></head><body>Current IP Address: 173.66.46.97</body></html>\\r\\n'.This reveals that the malware queried the victim's public IP address. The response shows the victim's real IP: 173.66.46.97.**
 
 
 **[I/O Graphs](images/132-226-8-169.png)**
 
+
 **Low but regular traffic to checkip.dyndns.org – beaconing behavior.**
 
 **[I/O Graphs](images/132-226-8-169.png)**
+
 
 **If we check File-->Export Object --> HTTP( Cause we can see bytes of data and timeline)**
 
 **[Export Object](images/132-226-8-169-bytes.png)**
 
+
 **Well, Each packet contains the same response: the victim's public IP (173.66.46.97).This confirms that the malware periodically checks the victim's public IP – a classic beaconing technique. \*\*It's enumeration.(classic beaconing technique)\*\***
 **If we countinue to checking another packets, we can see; 104.21.67.152 reallyfreegeiop.org (C2?) ip connected to host(10.1.9.101) 443(HTTPS) and 49898 ports at 18:04:50. 1 Second after 132.226.8.169 checkip.dyndns.org (beaconing) connection.**
 
 **[I/O Graphs of 132.226.8.169 and 104.21.67.152](images/2ipio.png)**
+
 
 **In this Graphic we can see that Both show low but regular traffic – typical of beaconing and C2 communication.** 
 
