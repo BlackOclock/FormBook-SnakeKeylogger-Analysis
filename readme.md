@@ -312,6 +312,22 @@
 **This confirms that the file is malicious and matches the behavior we observed in the PCAP.**
 **In Hybrid Analysis there is a 256SHA code; if we write the filter '4b7a405d2d1a9411a60f5316c9a77c64955683686aec9d2aa74527d177f6ada6' ,**
 
+
+                                      **IN SHODAN RESULT ABOUT 162.254.34.31**
+**![Shodan](images/shodan.png)**
+
+**| IP Adresi | 162.254.34.31 |
+| Hostname | server1educt.shop |
+| Domain | educt.shop |
+| Lokasyon | Byron, ABD |
+| Hosting | Namecheap, Inc. |
+| Açık Portlar | 21, 25, 80, 110, 143, 443, 465, **587**, 993, 995 |
+| OS | Operating System Linux**
+
+Note: link of shodan https://www.shodan.io/host/162.254.34.31
+
+**587 Port, which was used for the exfiltration from host ** 
+
                                           **VirusTotal Confirmation**
 
 
