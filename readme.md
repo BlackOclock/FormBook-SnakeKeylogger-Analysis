@@ -90,7 +90,7 @@
 
 **When we start checking packets from first packet, we can see a handshake on (HTTPS)443 and 49895 between 172.253.63.95 and 10.0.9.101 at 18:04:43 2026-01-09.**
 
-**![First Handshake on 3. packet between with 172.253.63.95 and 10.1.9.101 ](images/handshake1.png)**
+**![First Handshake on 3. packet between with 172.253.63.95 and 10.1.9.101 ](images/handshake.png)**
 
 **well we can write on filter ip.src==172.253.63.95 and ip.dst == 10.1.9.101 \&\& tcp.port == 443**
 
