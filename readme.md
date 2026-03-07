@@ -100,7 +100,7 @@
 
 **We already know from the Endpoints table that 3 MB of data was sent to 10.1.9.101 from this IP. Now, let's see when and how fast it happened.**
 
-**![I/O Graphs ](images/spike1.png)**
+**![I/O Graphs ](images/spike.png)**
 
 **The graph shows a massive spike of 1500+ packets/second at the moment of infection.**
 
@@ -131,7 +131,7 @@
 **At packet 2039, we see that 51.159.84.185 '1zil1.s3.cubbit.eu' wants connect to Host(10.1.9.101)**
 
 
-**[Connection of 51.159.84.185](images/handshake.png)**
+**![Connection of 51.159.84.185](images/handshake.png)**
 
 
 
@@ -144,7 +144,7 @@
 **First Download Detail (ip.src == 172.253.63.95)**
 
 
-**[First Download](images/spike.png)**
+**![First Download](images/spike1.png)**
 
 
 
